@@ -1,0 +1,95 @@
+<!--
+	作者：黄旺锬
+	描述：web作业--交互式学习录播器--刺客信条cg的观看和提问
+	提问界面
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>提问</title>
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+</style>
+</head>
+<body style="text-align: center;background-size:cover" background="3.jpg";>  <!--插入背景图片-->
+
+<!--导航行栏
+-->
+<ul>
+  <li><a class="active" href="Odyssey.html">奥德赛</a></li>
+  <li><a href="Origins.html">起源</a></li>
+  <li><a href="Syndicate.html">枭雄</a></li>
+  <li><a href="Unity.html">大革命</a></li>
+  <li><a href="Quiz.html">提问</a></li>
+</ul>
+
+<form action="mailto:2498153495@qq.com" method="post" enctype="text/plain">
+<h2 style="color: black;">登录你的Microsoft邮箱，将你的问题以邮件的方式提交</h2>
+姓名：<br />
+<input type="text" name="姓名" value="bayek" size="20">
+<br />
+Microsoft邮箱：<br />
+<input type="text" name="Microsoft邮箱" value="×××@.outlook.com" size="20">
+<br />
+内容：<br />
+<textarea style="resize: none;"  name="内容"  size="20" rows="15" cols="30">
+</textarea>
+
+
+<br /><br />
+<input type="submit" value="发送" 
+	style=" background-color: burlywood; 
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;">
+
+<input type="reset" value="重置" 
+	style=" background-color: burlywood; 
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;">
+
+
+</form>
+
+</body>
+
+
+</html>
