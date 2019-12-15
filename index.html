@@ -1,0 +1,112 @@
+<!--
+	作者：黄旺锬
+	描述：web作业--交互式学习录播器--刺客信条cg的观看和提问
+	cg1 刺客信条奥德赛
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>刺客信条奥德赛</title>
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+</style>
+</head>
+<body style="text-align: center;background-size:cover" background="3.jpg";>  <!--插入背景图片-->
+
+<!--导航行栏
+-->
+<ul>
+  <li><a class="active" href="index.html">奥德赛</a></li>
+  <li><a href="Origins.html">起源</a></li>
+  <li><a href="Syndicate.html">枭雄</a></li>
+  <li><a href="Unity.html">大革命</a></li>
+  <li><a href="Quiz.html">提问</a></li>
+</ul>
+
+<!--视频cg
+-->
+<div style="text-align:center"> 
+	<style type="text/css">
+		button {
+     background-color: burlywood; 
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}  <!--设置按钮样式-->
+
+	</style>
+
+   <br />
+     <!--设置按钮-->
+  <button onclick="playPause()">播放/暂停</button> 
+  <button onclick="makeBig()">放大</button>
+  <button onclick="reduction()">还原</button>
+  <button onclick="makeSmall()">缩小</button>
+   
+  <br />
+	 <video id="video1" width="850">
+    <source src="cg1.mp4" type="video/mp4"></source>
+   
+  </video>
+ 
+</div> 
+
+<script> 
+var myVideo=document.getElementById("video1"); 
+
+function playPause()     <!--播放/暂停-->
+{ 
+	if (myVideo.paused) 
+	  myVideo.play(); 
+	else 
+	  myVideo.pause(); 
+} 
+
+	function makeBig()    <!--放大-->
+{ 
+	myVideo.width=1000; 
+} 
+
+	function reduction()   <!--还原-->
+{ 
+	myVideo.width=850; 
+} 
+
+	function makeSmall()    <!--缩小-->
+{ 
+	myVideo.width=700; 
+} 
+</script> 
+
+</body>
+</html>
